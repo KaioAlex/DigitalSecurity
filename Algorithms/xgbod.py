@@ -14,17 +14,17 @@ from sklearn.utils.validation import check_is_fitted
 from sklearn.utils.validation import check_X_y
 from xgboost.sklearn import XGBClassifier
 
-from .base import BaseDetector
-from .knn import KNN
-from .lof import LOF
-from .iforest import IForest
-from .hbos import HBOS
-from .ocsvm import OCSVM
+from pyod.models.base import BaseDetector
+from pyod.models.knn import KNN
+from pyod.models.lof import LOF
+from pyod.models.iforest import IForest
+from pyod.models.hbos import HBOS
+from pyod.models.ocsvm import OCSVM
 
-from ..utils.utility import check_parameter
-from ..utils.utility import check_detector
-from ..utils.utility import standardizer
-from ..utils.utility import precision_n_scores
+from pyod.utils.utility import check_parameter
+from pyod.utils.utility import check_detector
+from pyod.utils.utility import standardizer
+from pyod.utils.utility import precision_n_scores
 
 from datetime import datetime #debug
 
